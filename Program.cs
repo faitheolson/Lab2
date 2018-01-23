@@ -22,15 +22,15 @@ namespace Lab2
                 if (int.TryParse(Input, out var num1) && num1 >= 0 && num1 <= 100)//validate input
                 {
                     Console.WriteLine($"Thanks, {Name}!");
-                    if (num1 % 2 == 1 && num1 < 100 && num1 > 0)
+                    if (num1 % 2 == 1)//checks for odd value
                     {
                         Console.WriteLine($"{Input} Odd");
                     }
-                    else if (num1 >= 2 && num1 <= 25)
+                    else if (num1 <= 25)//checks for even values under or equal to 25
                     {
                         Console.WriteLine("Even and less than 25");
                     }
-                    else if (num1 > 25 && num1 <= 100)
+                    else if (num1 > 25)//checks for even values over 25
                     {
                         Console.WriteLine("Even");
                     }
